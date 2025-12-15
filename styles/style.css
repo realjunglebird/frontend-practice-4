@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+    font-family: "Montserrat", sans-serif;
+}
+
+.header {
+    margin: 2rem;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.header__icons {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.header__search {
+    position: absolute;
+    left: 0;
+}
+
+.header__logo {
+    /* Центрирование логотипа */
+}
+
+.header__icons-right {
+    position: absolute;
+    right: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav__list {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-section {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-section--dark {
+    color: white;
+    background-color: #2A244B;
+}
+
+.card-section__text-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    gap: 20px;
+    flex: 1;
+}
+
+.card-section__text {
+    position: absolute;
+    bottom: 3rem;
+    width: 90%;
+}
+
+.card-section__image {
+    flex: 1;
+    object-fit: cover;
+}
+
+.features {
+    width: 90%;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.features__container {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.feature {
+    max-width: 20rem;
+}
+
+.products {
+    width: 90%;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.products__container {
+    display: flex;
+    gap: 30px;
+}
+
+.product-card {
+    width: 305px;
+}
+
+.product-card__title {
+    margin-top: 1rem;
+}
+
+.product-card__price {
+    font-weight: normal;
+    margin-top: 0.5rem;
+}
+
+.product-card--wide {
+    width: 630px;
+}
+
+.button {
+    cursor: pointer;
+    padding: 20px;
+    border: none;
+    width: fit-content;
+    font-family: "Montserrat", sans-serif;
+}
+
+.button--dark {
+    color: white;
+    background-color: #494465;
+}
+
+.button--light {
+    color: #2A254B;
+    background-color: #F9F9F9;
+}
+
+.club {
+    width: 90%;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    gap: 1rem;
+}
+
+.input {
+    padding: 20px;
+    border: none;
+    min-width: 300px;
+    outline: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+.input--light {
+    color: #2A254B;
+    background-color: #F9F9F9;
+}
+
+.input--dark {
+    color: white;
+    background-color: #494465;
+}
+
+.footer {
+    padding: 50px 5%;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    background-color: #2A244B;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.footer__upper {
+    display: flex;
+    gap: 4rem;
+}
+
+.footer__lower {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.footer__icons {
+    position: absolute;
+    right: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.footer__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer__list-title {
+    margin-bottom: 0.5rem;
+}

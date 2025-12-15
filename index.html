@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин мебели</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body class="page">
+    <header class="header">
+        <div class="header__icons">
+            <img class="header__search" src="assets/icons/Search.png" alt="Иконка поиска">
+            <img class="header__logo" src="logo.png" alt="Логотип">
+            <div class="header__icons-right">
+                <img class="header__cart" src="assets/icons/Shopping-cart.png" alt="Иконка тележки">
+                <img class="header__profile" src="assets/icons/User--avatar.png" alt="Иконка профиля">
+            </div>
+        </div>
+        <nav class="header__nav nav">
+            <ul class="nav__list">
+                <li class="nav__item nav__item--active"><a class="nav__link">Цветочные горшки</a></li>
+                <li class="nav__item"><a class="nav__link">Керамика</a></li>
+                <li class="nav__item"><a class="nav__link">Столы</a></li>
+                <li class="nav__item"><a class="nav__link">Стулья</a></li>
+                <li class="nav__item"><a class="nav__link">Кухонные принадлежности</a></li>
+                <li class="nav__item"><a class="nav__link">Посуда</a></li>
+                <li class="nav__item"><a class="nav__link">Столовые приборы</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="card-section card-section--dark">
+            <div class="card-section__text-container">
+                <h2 class="card-section__title">Мебельный бренд будущего с дизайном, неподвластным времени</h2>
+                <button class="button button--dark">Посмотреть коллекцию</button>
+                <p class="card-section__text">Каждый из&nbsp;нас понимает очевидную вещь: современная методология разработки позволяет выполнить важные задания по&nbsp;разработке экспериментов, поражающих по&nbsp;своей масштабности и&nbsp;грандиозности. Не&nbsp;следует, однако, забывать, что перспективное планирование в&nbsp;значительной степени обусловливает важность дальнейших направлений развития. А&nbsp;также сторонники тоталитаризма в&nbsp;науке ограничены исключительно образом мышления.</p>
+            </div>
+            <img class="card-section__image" src="assets/img/chair-big.jpg" alt="Фото стула">
+        </section>
+
+        <section class="features">
+            <h2 class="features__title">Что отличает наш бренд от остальных</h2>
+            <div class="features__container">
+                <article class="feature">
+                    <img class="feature__icon" src="assets/icons/Delivery.png" alt="Иконка доставки">
+                    <h3 class="feature__title">Следующий день как стандарт</h3>
+                    <p class="feature__description">Закажите до 15:00 и получите свой заказ на следующий день как стандарт.</p>
+                </article>
+                <article class="feature">
+                    <img class="feature__icon" src="assets/icons/Checkmark.png" alt="Иконка галочки">
+                    <h3 class="feature__title">Сделано настоящими мастерами</h3>
+                    <p class="feature__description">Изделия ручной работы, созданные с настоящей страстью и мастерством</p>
+                </article>
+                <article class="feature">
+                    <img class="feature__icon" src="assets/icons/Purchase.png" alt="Иконка кредитной карточки">
+                    <h3 class="feature__title">Непревзойденные цены</h3>
+                    <p class="feature__description">За наши материалы и качество вы нигде не найдете более выгодных цен.</p>
+                </article>
+                <article class="feature">
+                    <img class="feature__icon" src="assets/icons/Sprout.png" alt="Иконка ростка">
+                    <h3 class="feature__title">Переработанная упаковка</h3>
+                    <p class="feature__description">Мы используем 100% переработанную упаковку, чтобы обеспечить контроль за своим воздействием на окружающую среду.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="products">
+            <h2 class="products__title">Новая керамика</h2>
+            <div class="products__container">
+                <article class="product-card">
+                    <img class="product-card__image" src="assets/img/chair.jpg" alt="Фото стула">
+                    <h3 class="product-card__title">Стул Денди</h3>
+                    <p class="product-card__price">£250</p>
+                </article>
+                <article class="product-card">
+                    <img class="product-card__image" src="assets/img/rustic-vase-set.jpg" alt="Фото набора ваз">
+                    <h3 class="product-card__title">Набор ваз в деревенском стиле</h3>
+                    <p class="product-card__price">£155</p>
+                </article>
+                <article class="product-card">
+                    <img class="product-card__image" src="assets/img/silky-vase.jpg" alt="Фото вазы">
+                    <h3 class="product-card__title">Шелковая ваза</h3>
+                    <p class="product-card__price">£125</p>
+                </article>
+                <article class="product-card">
+                    <img class="product-card__image" src="assets/img/lucy-lamp.jpg" alt="Фото люстры">
+                    <h3 class="product-card__title">Люстра Люси</h3>
+                    <p class="product-card__price">£399</p>
+                </article>
+            </div>
+            <button class="button button--light">Посмотреть коллекцию</button>
+        </section>
+
+        <section class="products">
+            <h2 class="products__title">Наши популярные продукты</h2>
+            <div class="products__container">
+                <article class="product-card--wide">
+                    <img class="product-card__image" src="assets/img/sofa.jpg" alt="Фото дивана">
+                    <h3 class="product-card__title">Диван из замши «Тополь»</h3>
+                    <p class="product-card__price">£980</p>
+                </article>
+                <article class="product-card">
+                    <img class="product-card__image" src="assets/img/chair.jpg" alt="Фото стула">
+                    <h3 class="product-card__title">Стул Денди</h3>
+                    <p class="product-card__price">£250</p>
+                </article>
+                <article class="product-card">
+                    <img class="product-card__image" src="assets/img/chair-2.jpg" alt="Фото стула">
+                    <h3 class="product-card__title">Стул Денди</h3>
+                    <p class="product-card__price">£250</p>
+                </article>
+            </div>
+            <button class="button button--light">Посмотреть коллекцию</button>
+        </section>
+
+        <section class="club">
+            <h2 class="club__title">Присоединитесь к клубу и получите преимущества</h2>
+            <p class="club__description">Подпишитесь на нашу рассылку и получайте эксклюзивные предложения о новых ассортиментах, распродажах, временных магазинах и многом другом.</p>
+            <form class="form">
+                <input class="input input--light" type="email" placeholder="your@email.com" required>
+                <button class="button button--dark" type="submit">Отправить</button>
+            </form>
+        </section>
+
+        <section class="card-section">
+            <div class="card-section__text-container">
+                <h2 class="card-section__title">От студии в Лондоне до мирового бренда с более чем 400 магазинами</h2>
+                <button class="button button--light">Связаться с нами</button>
+                <p class="card-section__text">В&nbsp;частности, укрепление и&nbsp;развитие внутренней структуры говорит о&nbsp;возможностях своевременного выполнения сверхзадачи. В&nbsp;своём стремлении повысить качество жизни, они забывают, что сложившаяся структура организации не&nbsp;оставляет шанса для своевременного выполнения сверхзадачи. Господа, высокотехнологичная концепция общественного уклада обеспечивает широкому кругу (специалистов) участие в&nbsp;формировании стандартных подходов.</p>
+            </div>
+            <img class="card-section__image" src="assets/img/interior.jpg" alt="Фото интерьера">
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__upper">
+            <ul class="footer__list">
+                <li class="footer__list-title"><h4>Меню</h4></li>
+                <li class="footer__item"><a class="footer__link">Новые поступления</a></li>
+                <li class="footer__item"><a class="footer__link">Хиты продаж</a></li>
+                <li class="footer__item"><a class="footer__link">Вы недавно смотрели</a></li>
+                <li class="footer__item"><a class="footer__link">Популярное на этой неделе</a></li>
+                <li class="footer__item"><a class="footer__link">Все товары</a></li>
+            </ul>
+            <ul class="footer__list">
+                <li class="footer__list-title"><h4>Категории</h4></li>
+                <li class="footer__item"><a class="footer__link">Посуда</a></li>
+                <li class="footer__item"><a class="footer__link">Мебель</a></li>
+                <li class="footer__item"><a class="footer__link">Товары для дома</a></li>
+                <li class="footer__item"><a class="footer__link">Горшки для растений</a></li>
+                <li class="footer__item"><a class="footer__link">Стулья</a></li>
+            </ul>
+            <ul class="footer__list">
+                <li class="footer__list-title"><h4>Наша компания</h4></li>
+                <li class="footer__item"><a class="footer__link">О нас</a></li>
+                <li class="footer__item"><a class="footer__link">Вакансии</a></li>
+                <li class="footer__item"><a class="footer__link">Связаться с нами</a></li>
+                <li class="footer__item"><a class="footer__link">Конфиденциальность</a></li>
+                <li class="footer__item"><a class="footer__link">Условия возврата</a></li>
+            </ul>
+            <div class="footer__newsletter">
+                <p class="footer__newsletter-title">Подпишитесь на нашу рассылку:</p>
+                <form class="form">
+                    <input class="input input--dark" type="email" placeholder="your@email.com" required>
+                    <button class="button button--light" type="submit">Отправить</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer__lower">
+            <p class="footer__copyright">&copy; 2025 Avilon LTD</p>
+            <div class="footer__icons">
+                <img class="footer__icon" src="assets/icons/tg.png" alt="Логотип Telegram">
+                <img class="footer__icon" src="assets/icons/icon_vk.png" alt="Логотип VK">
+                <img class="footer__icon" src="assets/icons/Logo--pinterest.png" alt="Логотип Pinterest">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
