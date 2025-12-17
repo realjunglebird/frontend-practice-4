@@ -27,12 +27,13 @@
 }
 
 .header__search {
+    cursor: pointer;
     position: absolute;
     left: 0;
 }
 
 .header__logo {
-    /* Центрирование логотипа */
+    cursor: pointer;
 }
 
 .header__icons-right {
@@ -43,10 +44,29 @@
 }
 
 .nav__list {
-    list-style: none;
-    width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 390px) {
+    .nav__list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.nav__link {
+    cursor: pointer;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.nav__link:hover {
+    background-color: #f0f0f0;
+    color: #2c5530;
 }
 
 .main {
@@ -59,6 +79,12 @@
     width: 90%;
     display: flex;
     justify-content: space-between;
+}
+
+@media (max-width: 390px) {
+    .card-section {
+        flex-direction: column-reverse;
+    }
 }
 
 .card-section--dark {
@@ -76,15 +102,112 @@
 }
 
 .card-section__text {
-    position: absolute;
+    position: static;
     bottom: 3rem;
     width: 90%;
 }
 
-.card-section__image {
-    flex: 1;
-    object-fit: cover;
+@media (max-width: 390px) {
+    .card-section__text {
+        position: static;
+    }
 }
+
+.card-section__image {
+    /* flex: 1; */
+    object-fit: cover;
+    max-width: 35%;
+}
+
+@media (max-width: 390px) {
+    .card-section__image {
+        max-width: 100%;
+    }
+}
+
+
+
+.features {
+    width: 90%;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.features__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    gap: 4rem;
+    width: 100%;
+    justify-items: center;
+}
+
+@media (max-width: 390px) {
+    .features__container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+.feature {
+    max-width: 20rem;
+    width: 100%;
+}
+
+.products {
+    width: 90%;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.products__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(305px, 1fr));
+    gap: 30px;
+    width: 100%;
+}
+
+@media (max-width: 390px) {
+    .products__container {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
+
+.product-card {
+    width: 100%;
+}
+
+.product-card__title {
+    margin-top: 1rem;
+}
+
+.product-card__image {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.product-card__price {
+    font-weight: normal;
+    margin-top: 0.5rem;
+}
+
+.product-card--wide {
+    grid-column: span 2;
+}
+
+@media (max-width: 390px) {
+    .product-card--wide {
+        grid-column: span 1;
+    }
+}
+
+/*
 
 .features {
     width: 90%;
@@ -98,6 +221,7 @@
 .features__container {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 4rem;
 }
 
@@ -116,6 +240,9 @@
 
 .products__container {
     display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
     gap: 30px;
 }
 
@@ -127,6 +254,16 @@
     margin-top: 1rem;
 }
 
+.product-card__image {
+    max-width: 100%;
+}
+
+@media (max-width: 390px) {
+    .product-card {
+        width: 150px;
+    }
+}
+
 .product-card__price {
     font-weight: normal;
     margin-top: 0.5rem;
@@ -135,6 +272,14 @@
 .product-card--wide {
     width: 630px;
 }
+
+@media (max-width: 390px) {
+    .product-card--wide {
+        width: 305px;
+    }
+}
+
+*/
 
 .button {
     cursor: pointer;
@@ -166,13 +311,12 @@
 
 .form {
     display: flex;
-    gap: 1rem;
 }
 
 .input {
     padding: 20px;
     border: none;
-    min-width: 300px;
+    /* min-width: 300px; */
     outline: none;
     font-family: "Montserrat", sans-serif;
 }
@@ -199,6 +343,8 @@
 
 .footer__upper {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 4rem;
 }
 
@@ -220,8 +366,15 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    /* align-items: center; */
 }
 
 .footer__list-title {
     margin-bottom: 0.5rem;
+}
+
+.footer__newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
